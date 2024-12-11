@@ -1,10 +1,10 @@
 {
   "onboarding": {
-    "message": "مرحبا بكم في موقع تطبيق obytes"
+    "message": "مرحبا بكم في روا ستارت ريكونهيسي"
   },
   "settings": {
     "about": "حول التطبيق ",
-    "app_name": "اسم التطبيق",
+    "app_name": "روا ستارت ريكونهيسي",
     "arabic": "عربي",
     "english": "إنجليزي",
     "generale": "عام",
@@ -29,5 +29,5 @@
     "version": "إصدار",
     "website": "موقع الكتروني"
   },
-  "welcome": "test arabic"
+  "welcome": "مرحبا بكم في روا ستارت ريكونهيسي"
 }

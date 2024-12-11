@@ -1,10 +1,10 @@
 {
   "onboarding": {
-    "message": "Welcome to obytes app site"
+    "message": "Welcome to Rua Start Reconhece"
   },
   "settings": {
     "about": "About",
-    "app_name": "App Name",
+    "app_name": "Rua Start Reconhece",
     "arabic": "Arabic",
     "english": "English",
     "generale": "General",
@@ -27,7 +27,8 @@
     },
     "title": "Settings",
     "version": "Version",
-    "website": "Website"
+    "website": "Website",
+    "portuguese": "Português"
   },
-  "welcome": "Welcome to obytes app site"
+  "welcome": "Welcome to Rua Start Reconhece"
 }

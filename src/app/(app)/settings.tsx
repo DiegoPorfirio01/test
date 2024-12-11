@@ -13,7 +13,7 @@ import {
   Text,
   View,
 } from '@/components/ui';
-import { Github, Rate, Share, Support, Website } from '@/components/ui/icons';
+import { Rate, Share, Support } from '@/components/ui/icons';
 import { translate, useAuth } from '@/lib';
 
 export default function Settings() {
@@ -24,7 +24,6 @@ export default function Settings() {
   return (
     <>
       <FocusAwareStatusBar />
-
       <ScrollView>
         <View className="flex-1 px-4 pt-16 ">
           <Text className="text-xl font-bold">
@@ -61,16 +60,6 @@ export default function Settings() {
           <ItemsContainer title="settings.links">
             <Item text="settings.privacy" onPress={() => {}} />
             <Item text="settings.terms" onPress={() => {}} />
-            <Item
-              text="settings.github"
-              icon={<Github color={iconColor} />}
-              onPress={() => {}}
-            />
-            <Item
-              text="settings.website"
-              icon={<Website color={iconColor} />}
-              onPress={() => {}}
-            />
           </ItemsContainer>
 
           <View className="my-8">

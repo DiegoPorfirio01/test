@@ -11,14 +11,14 @@ const schema = z.object({
   name: z.string().optional(),
   email: z
     .string({
-      required_error: 'Email is required',
+      required_error: 'Email é obrigatório',
     })
-    .email('Invalid email format'),
+    .email('Formato de email inválido'),
   password: z
     .string({
-      required_error: 'Password is required',
+      required_error: 'Senha é obrigatório',
     })
-    .min(6, 'Password must be at least 6 characters'),
+    .min(6, 'Senha deve ter pelo menos 6 caracteres'),
 });
 
 export type FormType = z.infer<typeof schema>;
@@ -43,12 +43,12 @@ export const LoginForm = ({ onSubmit = () => {} }: LoginFormProps) => {
             testID="form-title"
             className="pb-6 text-center text-4xl font-bold"
           >
-            Sign In
+            Logar
           </Text>
 
           <Text className="mb-6 max-w-xs text-center text-gray-500">
-            Welcome! 👋 This is a demo login screen! Feel free to use any email
-            and password to sign in and try it out.
+            Bem vindo de volta ! Isso é uma tela de login demo. Clique no botão
+            abaixo para logar.
           </Text>
         </View>
 

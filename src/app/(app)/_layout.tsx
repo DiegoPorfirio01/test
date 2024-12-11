@@ -1,12 +1,11 @@
 /* eslint-disable react/no-unstable-nested-components */
-import { Link, Redirect, SplashScreen, Tabs } from 'expo-router';
+import { Redirect, SplashScreen, Tabs } from 'expo-router';
 import React, { useCallback, useEffect } from 'react';
 
-import { Pressable, Text } from '@/components/ui';
 import {
-  Feed as FeedIcon,
+  Camera,
+  PlusProfile,
   Settings as SettingsIcon,
-  Style as StyleIcon,
 } from '@/components/ui/icons';
 import { useAuth, useIsFirstTime } from '@/lib';
 
@@ -35,20 +34,19 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Feed',
-          tabBarIcon: ({ color }) => <FeedIcon color={color} />,
-          headerRight: () => <CreateNewPostLink />,
+          title: 'Camera',
+          tabBarIcon: ({ color }) => <Camera color={color} />,
           tabBarButtonTestID: 'feed-tab',
+          headerShown: false,
         }}
       />
-
       <Tabs.Screen
-        name="style"
+        name="face-setup"
         options={{
-          title: 'Style',
+          title: 'Dataset',
           headerShown: false,
-          tabBarIcon: ({ color }) => <StyleIcon color={color} />,
-          tabBarButtonTestID: 'style-tab',
+          tabBarIcon: ({ color }) => <PlusProfile color={color} />,
+          tabBarButtonTestID: 'add-photo-tab',
         }}
       />
       <Tabs.Screen
@@ -63,13 +61,13 @@ export default function TabLayout() {
     </Tabs>
   );
 }
+// const CreateNewRecognitionPhoto = () => {
+//   return (
+//     <Link href="/feed/add-post" asChild>
+//       <Pressable>
+//         <Text className="px-3 text-primary-300">Adicionar foto</Text>
+//       </Pressable>
+//     </Link>
+//   );
+// };
 
-const CreateNewPostLink = () => {
-  return (
-    <Link href="/feed/add-post" asChild>
-      <Pressable>
-        <Text className="px-3 text-primary-300">Create</Text>
-      </Pressable>
-    </Link>
-  );
-};
