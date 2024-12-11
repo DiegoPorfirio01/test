@@ -23,7 +23,7 @@ export default function FaceSetup() {
           </View>
           
           <Text className="mb-6 text-center text-3xl font-bold text-gray-900 dark:text-white">
-            Configurar Face ID
+            Configurar Reconhecimento Facial
           </Text>
           
           <Text className="mb-8 text-center text-base text-gray-600 dark:text-gray-300">
